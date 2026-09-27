@@ -1,7 +1,11 @@
 $color-texto: rgb(0, 0, 255);
 
-body {
+@mixin texto-centrado {
   text-align: center;
+}
+
+body {
+  @include texto-centrado;
 
   h1 {
     color: $color-texto;
